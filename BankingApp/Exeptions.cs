@@ -24,4 +24,9 @@ namespace BankingApp
         public LoanExeption() : base("Invalid Loan. The Loan Cant Be 0 Or Negative.") { }
         public LoanExeption(string message) : base(message) { }
     }
+    public class BalanceException : Exception
+    {
+        public BalanceException() : base("Error With Balance Operations.") { }
+        public BalanceException(string message) : base(message) { }
+    }
 }
