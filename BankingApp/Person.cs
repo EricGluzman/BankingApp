@@ -49,7 +49,7 @@
             }
             public void ChangeAddress(string ad)
             {
-                if (ad == null) throw new NullReferenceException();
+                if (ad == null) throw new ArgumentNullException();
                 this.Address = ad;
             }
         }

@@ -4,7 +4,7 @@
     {
         public abstract class Employee : Person
         {
-            public List<Customer> Customers { get; private set; }
+            public static List<Customer> Customers { get; private set; }
             public EmployeeClass Role { get; private set; }
             public DateTime HireDate { get; private set; }
             public int EmployeeID { get; private set; }
@@ -17,10 +17,6 @@
                 this.EmployeeID = EmpIdCounter;
                 Customers = customers;
                 EmpIdCounter++;
-            }
-            public void AddCustomer(string name, string sur_Name, byte age, string address, int balance)
-            {
-                this.Customers.Add(new Customer(name,sur_Name,age,address,balance));
             }
         }
     }

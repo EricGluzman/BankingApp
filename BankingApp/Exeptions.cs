@@ -29,4 +29,8 @@ namespace BankingApp
         public BalanceException() : base("Error With Balance Operations.") { }
         public BalanceException(string message) : base(message) { }
     }
+    public class SuspendedAccountException : Exception {
+        public SuspendedAccountException() : base("Cant Work With Suspended Account.") { }
+        public SuspendedAccountException(string message) : base(message) { }
+    }
 }
